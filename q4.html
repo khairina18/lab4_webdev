@@ -1,0 +1,20 @@
+<!--Toggle Background Color-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+    <script>
+        function toggleColor() {
+            const box = document.getElementById("colorBox");
+            const currentColor = box.style.backgroundColor;
+            box.style.backgroundColor = currentColor === "red" ? "blue" : "red";
+        }
+    </script>
+</head>
+<body>
+    <div id="colorBox" style="width: 200px; height: 100px; background-color: red;"></div>
+    <button onclick="toggleColor()">Toggle Color</button>
+</body>
+</html>
